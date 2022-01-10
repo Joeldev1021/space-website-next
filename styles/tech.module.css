@@ -1,0 +1,7 @@
+.tech {
+    background-image: url("../public/assets/technology/background-technology-desktop.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     min-height: 100vh;
+  }

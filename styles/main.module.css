@@ -1,0 +1,31 @@
+.main {
+    position: relative;
+    top: 0;
+
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+    display: flex;
+    margin-top: 24rem;
+    justify-content: space-between;
+    align-items: center;
+   color: #EEEEEF  ;
+  
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.titlelg {
+    font-size: 15rem;
+    font-family:  'Bellefair', serif;
+}
+.text {
+    font-size: 1.6rem;
+    width: 39rem;
+    font-weight: 300;
+}

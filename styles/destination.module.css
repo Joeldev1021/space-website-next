@@ -1,0 +1,86 @@
+.destination {
+  background-image: url("../public/assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
+.containerImg {
+   margin-top: 5rem;
+   display: flex;
+   margin-left: 10rem;
+}
+
+.img {
+   width:35rem;
+   margin:auto;
+}
+
+.section {
+   margin-top: 7rem;
+   text-align: start;
+   padding: 1rem;
+ }
+
+ .active {
+   text-decoration: underline;
+   text-underline-offset: 1.3rem;
+ }
+
+ 
+.ul {
+  display: flex;
+  list-style: none;
+  width: 30rem;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #dbdee2; 
+  padding: 3px 0px;
+
+}
+.ul li:hover {
+   text-decoration: underline;
+   text-underline-offset: 1.3rem;
+   cursor: pointer;
+}
+
+.name {
+  font-size: 10rem;
+  text-transform: uppercase;
+  padding: 1rem 0px;
+}
+
+.description {
+   font-size: 1.6rem;
+   font-weight: 300;
+   width: 38.9rem;
+   padding: 2rem 0px;
+   padding-bottom: 5rem;
+   font-family: 'Barlow', sans-serif;
+   line-height: 1.5;
+   border-bottom: 1px solid #585757;
+}
+
+.containerTravel  {
+   width: 40rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-size: 1.6rem;
+   padding: 3rem 0px;
+}
+
+.distance, .travel {
+   font-size: 3rem;
+   font-family: "Bellefair", serif;
+   text-transform: uppercase;
+}
+
+.label {
+ padding: 0.5rem 0px;
+ font-size: 1.0rem;
+ color: #dbdee2; 
+}

@@ -1,0 +1,45 @@
+.crew {
+    background-image: url("../public/assets/crew/background-crew-desktop.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     min-height: 100vh;
+}
+
+.crew ul {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.crew ul li {
+    list-style: none;
+    width: 1rem;
+    height:1rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.role {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #dbdee2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+}
+
+.name {
+    font-size:4.5rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  font-weight: 300;
+  width: 38.9rem;
+  padding: 2rem 0px;
+  padding-bottom: 5rem;
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.5;
+}
+
