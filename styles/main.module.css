@@ -18,6 +18,8 @@
 .title {
     font-size: 3rem;
     font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .titlelg {
@@ -28,4 +30,5 @@
     font-size: 1.6rem;
     width: 39rem;
     font-weight: 300;
+    font-family: 'Barlow', sans-serif;
 }

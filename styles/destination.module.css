@@ -6,6 +6,9 @@
   min-height: 100vh;
 }
 
+.planet {
+   padding-left: 8rem;
+}
 
 .containerImg {
    margin-top: 5rem;

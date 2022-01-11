@@ -5,3 +5,72 @@
      background-size: cover;
      min-height: 100vh;
   }
+
+ 
+  .tech section {
+      padding-left: 10rem;
+  }
+ 
+  .tech  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    height: 30rem;
+    padding: 0px;
+  }
+
+  .tech ul li {
+      border: 1px solid #dbdee2;
+      width: 8rem;
+      height: 8rem;
+      font-size: 3.5rem;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer
+  }
+
+  .flex {
+    margin-top: 10rem;
+      display: flex;
+  }
+
+  .name {
+      font-size: 5rem;
+      padding:2rem 0px;
+      text-transform: uppercase;
+  }
+
+  .terminology {
+       font-size: 1.6rem;
+       text-transform: uppercase;
+  }
+
+  .description {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.6rem;
+      padding-right: 5rem;
+  }
+
+  .containertext {
+      padding: 2rem 4rem;
+  }
+
+  .active {
+      background: white;
+      color:black;
+  }
+
+  .containerImg {
+        width: 40rem;
+        margin-top: 10rem;
+        margin-left: 36rem;
+  }
+
+ .containerImg img {
+      width: 100%;
+  }

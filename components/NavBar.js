@@ -18,7 +18,7 @@ const NavBar = () => {
           {
            navList.map((item, index) => {
              return (
-                 <li className={active === item && "nav-active"} key={item}>
+                 <li className={active === item ? "nav-active" : ""} key={item}>
                      <Link href={item === "home" ? "/" : item}>
                          <a ><span>0{index}</span> {item}</a>
                      </Link>

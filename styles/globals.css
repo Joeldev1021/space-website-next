@@ -47,13 +47,12 @@ p {
   font-weight: 300;
   letter-spacing: 10px;
   text-align: left;
-  padding-left: 8rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
   
 }
 
 .title span {
   font-weight: bold;
-  color: #474851; 
-  font-size: 2.3rem;
+  color: #474851;  
 }

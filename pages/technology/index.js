@@ -1,14 +1,34 @@
 /* eslint-disable no-unused-vars */
 import Header from "../../components/Header";
-import styles from "../../styles/tech.module.css";
 import data from "../../data.json";
 import { useState } from "react";
+import Title from "../../components/Title";
+import styles from "../../styles/tech.module.css";
 
 const Tech = () => {
   const [tech, setTech] = useState(data.technology);
+  const [techId, setTechId] = useState(0);
   return (
       <div className={styles.tech}>
           <Header/>
+          <div className="container">
+              <section >
+                  <Title num="03" text={"space launch 101"}/>
+                  <div className={styles.flex}>
+                      <ul >
+                          { new Array(tech.length).fill(0).map((n, i) => <li className={i === techId ? styles.active : ""} onClick={() => setTechId(i)} key={i}>{i + 1}</li>) }
+                      </ul>
+                      <div className={styles.containertext}>
+                          <p className={styles.terminology}>The terminology</p>
+                          <p className={styles.name}>{tech[techId].name}</p>
+                          <p className={styles.description}>{tech[techId].description}</p>
+                      </div>
+                  </div>
+              </section>
+              <div className={styles.containerImg}>
+                  <img src={tech[techId].images.portrait} alt={tech[techId].name} />
+              </div>
+          </div>
       </div>
   );
 };
