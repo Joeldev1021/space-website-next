@@ -9,7 +9,7 @@ import Title from "../../components/Title";
 
 const Destination = () => {
   const [destin, setDestin] = useState(data.destinations);
-  const [destinId, setDestinId] = useState(1);
+  const [destinId, setDestinId] = useState(0);
 
   const handleDestin = (id) => {
     setDestinId(id);

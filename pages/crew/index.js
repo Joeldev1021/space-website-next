@@ -1,6 +1,6 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import styles from "../../styles/crew.module.css";
 import data from "../../data.json";
@@ -9,7 +9,7 @@ import Carousel from "../../components/Carousel";
 
 const Crew = () => {
   const [crew, setCrew] = useState(data.crew);
-  const [crewId, setCrewId] = useState(3);
+  const [crewId, setCrewId] = useState(0);
 
   const handleNavCrew = (id) => {
     setCrewId(id);
@@ -20,9 +20,12 @@ const Crew = () => {
           <Header/>
           <div className={styles.carousel}>
               {
-                crew.map((item, i) => <Carousel item={item} index={i} crewId={crewId} handleNavCrew={handleNavCrew} key={i}/>)
+                crew.map((item, i) => <Carousel item={item} index={i} crewId={crewId} key={i}/>)
               }
           </div>
+          <ul>
+              { new Array(4).fill(0).map((n, i) => <li className={i === crewId ? styles.active : ""} onClick={() => handleNavCrew(i)} key={i}></li>) }
+          </ul>
       </div>
   );
 };

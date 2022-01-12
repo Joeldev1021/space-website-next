@@ -5,3 +5,11 @@
    background-size: cover;
    min-height: 100vh;
 }
+
+@media screen and (max-width: 950px) {
+  .home {
+    background-image: url("../public/assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+}

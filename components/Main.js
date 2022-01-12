@@ -5,7 +5,7 @@ const Main = () => {
   return (
       <main className={styles.main}>
           <div className={styles.container}>
-              <div>
+              <div className={styles.details}>
                   <p className={styles.title}>So, you want to travel to</p>
                   <p className={styles.titlelg}>SPACE</p>
                   <p className={styles.text}>

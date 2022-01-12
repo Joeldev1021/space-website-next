@@ -87,3 +87,18 @@
  font-size: 1.0rem;
  color: #dbdee2; 
 }
+
+/* .animate {
+   animation: fadeIn ease-in 0.5s ;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+    */
+

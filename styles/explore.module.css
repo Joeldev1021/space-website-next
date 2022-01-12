@@ -13,3 +13,12 @@
 .explore p {
   font-size: 2.5rem;
 }
+
+@media screen and (max-width: 950px) {
+  .explore {
+    width: 27rem;
+    height: 27rem;
+    margin: 9rem 0px;
+  }
+
+}
