@@ -2,14 +2,15 @@ import { useEffect, useRef } from "react";
 import styles from "../styles/crew.module.css";
 import Title from "./Title";
 
-const Carousel = ({ item, crewId, index }) => {
+const CarouselItem = ({ item, crewId, index }) => {
   const ref = useRef(null);
   useEffect(() => {
     console.log(100 * crewId);
     ref.current.style.transform = `translateX(-${100 * crewId}%)`;
   }, [crewId]);
+
   return (
-      <div ref={ref} className={`${styles.card} ${crewId === index ? styles.carouselActive : ""}`}>
+      <div ref={ref} className={`${styles.carouselItem} ${crewId === index ? styles.carouselActive : ""}`}>
           <section>
               <Title num={"02"} text={"Meet Your Crew"}/>
               <p className={styles.role}>{item.role}</p>
@@ -23,4 +24,4 @@ const Carousel = ({ item, crewId, index }) => {
   );
 };
 
-export default Carousel;
+export default CarouselItem;

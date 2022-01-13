@@ -10,23 +10,19 @@
     margin-top: 24rem;
     justify-content: space-between;
     align-items: center;
-   color: #EEEEEF  ;
+    color: #EEEEEF  ;
 }
 
 @media screen and (max-width: 950px) {
-   
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10rem;
-        text-align: center;
-       
+        text-align: center;   
     }
 }
     
-
-
 .title {
     font-size: 3rem;
     font-weight: 300;

@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 import styles from "../../styles/crew.module.css";
 import data from "../../data.json";
 import Title from "../../components/Title";
-import Carousel from "../../components/Carousel";
+import CarouselItem from "../../components/CarouselItem";
 
 const Crew = () => {
   const [crew, setCrew] = useState(data.crew);
@@ -20,12 +20,13 @@ const Crew = () => {
           <Header/>
           <div className={styles.carousel}>
               {
-                crew.map((item, i) => <Carousel item={item} index={i} crewId={crewId} key={i}/>)
+                crew.map((item, i) => <CarouselItem item={item} index={i} crewId={crewId} key={i}/>)
               }
           </div>
           <ul>
               { new Array(4).fill(0).map((n, i) => <li className={i === crewId ? styles.active : ""} onClick={() => handleNavCrew(i)} key={i}></li>) }
           </ul>
+
       </div>
   );
 };

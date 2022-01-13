@@ -4,8 +4,15 @@
      background-position: center;
      background-size: cover;
      min-height: 100vh;
+}
+
+@media screen and (max-width: 950px) {
+    .crew {
+        background-image: url("../public/assets/crew/background-crew-tablet.jpg");
+    }
     
 }
+
 
 .crew section {
     text-align: start;
@@ -16,10 +23,19 @@
     padding-top: 10rem;
     font-size: 3rem;
     font-weight: lighter;
- 
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #86878a; 
+}
+
+@media screen and (max-width: 950px) {
+    .crew section {
+        padding: 0;
+        text-align: center;
+    }
+    .role {
+        padding-top: 2rem;
+    }
 }
 
 .name {
@@ -36,6 +52,14 @@
   line-height: 1.5;
 }
 
+@media screen and (max-width: 950px) {
+    .description {
+        margin:auto;
+        width: 80%;
+        padding: 1rem;
+    }
+    
+}
 
 .crew ul {
     display: flex;
@@ -56,7 +80,10 @@
     border-radius: 50%;
     transition: all 0.5s ease;
     cursor: pointer;
+}
 
+@media screen and (max-width: 950px) {
+ 
 }
 
 
@@ -76,13 +103,19 @@
     /* height: 40rem;
     */
 }
-
 .containerImg img {
     width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .containerImg {
+        margin:auto;
+        margin-top: 5rem;
+    }
     
 }
-.card {
-   
+
+.carouselItem {
     width: 100%;
     padding-left: 10rem;
     display: grid;
@@ -95,16 +128,40 @@
     transform: translateX(0);
 }
 
+@media  screen and (max-width: 950px) {
+    .carouselItem {
+        width: 100%;
+        padding:0px;
+        grid-template-columns: 90%;
+        grid-gap: 1rem;
+    }
+
+    .carouselItem section {
+        padding-left: 0px;
+        margin-top: 10rem;
+        text-align: center;
+    }
+    
+}
+
 .carousel {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
-    
 }
 
 .carouselActive {
     z-index: 1;
     opacity: 1;
+}
+
+@media screen and (max-width: 950px) {
+    .carousel {
+        display: grid;
+        grid-template-columns: 100% 100% 100% 100%;
+    }
+    
+    
 }
 

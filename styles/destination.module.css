@@ -6,25 +6,76 @@
   min-height: 100vh;
 }
 
+@media screen and (max-width: 950px) {
+  .destination {
+    background-image: url("../public/assets/destination/background-destination-tablet.jpg");
+  }
+}
+
+.container {
+   display: grid;
+   width: 90%;
+   margin:auto;
+   margin-top: 6rem;
+   grid-template-columns: 50% 50%;
+ }
+
+ @media screen and (max-width: 950px) {
+   .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+      justify-content: center;
+   }  
+ }
+
+
 .planet {
    padding-left: 8rem;
 }
 
+
 .containerImg {
    margin-top: 5rem;
-   display: flex;
    margin-left: 10rem;
 }
-
 .img {
    width:35rem;
    margin:auto;
 }
 
+@media screen and (max-width: 950px) {
+   .containerImg {
+      margin-top: 10rem;
+      margin-left: 0;
+   }
+   .planet {
+     padding-left: 0;
+   }
+   .img {
+       width: 30rem;
+   }
+    
+ }
+ 
+
+
+
 .section {
    margin-top: 7rem;
    text-align: start;
    padding: 1rem;
+ }
+
+ @media screen and (max-width: 950px) {
+   .section {
+     margin: auto;
+     margin-top: 5rem;
+     text-align: center;
+     padding: 1rem;
+
+   }
+    
  }
 
  .active {
@@ -43,7 +94,12 @@
   font-family: "Barlow Condensed", sans-serif;
   color: #dbdee2; 
   padding: 3px 0px;
+}
 
+@media screen and (max-width: 950px) {
+  .ul {
+    margin:auto;
+  } 
 }
 .ul li:hover {
    text-decoration: underline;
@@ -66,6 +122,14 @@
    font-family: 'Barlow', sans-serif;
    line-height: 1.5;
    border-bottom: 1px solid #585757;
+  
+}
+
+@media screen and (max-width: 950px) {
+   .description {
+      margin:auto;
+   }
+   
 }
 
 .containerTravel  {
@@ -87,18 +151,4 @@
  font-size: 1.0rem;
  color: #dbdee2; 
 }
-
-/* .animate {
-   animation: fadeIn ease-in 0.5s ;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-    */
 
