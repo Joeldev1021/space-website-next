@@ -19,14 +19,11 @@ const Crew = () => {
       <div className={styles.crew}>
           <Header/>
           <div className={styles.carousel}>
-              {
-                crew.map((item, i) => <CarouselItem item={item} index={i} crewId={crewId} key={i}/>)
-              }
+              {crew.map((item, i) => <CarouselItem item={item} index={i} crewId={crewId} key={i}/>)}
           </div>
           <ul>
               { new Array(4).fill(0).map((n, i) => <li className={i === crewId ? styles.active : ""} onClick={() => handleNavCrew(i)} key={i}></li>) }
           </ul>
-
       </div>
   );
 };

@@ -8,6 +8,12 @@
 
 @media screen and (max-width: 950px) {
   .home {
+    background-image: url("../public/assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home {
     background-image: url("../public/assets/home/background-home-mobile.jpg");
   }
 }

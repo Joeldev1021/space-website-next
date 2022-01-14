@@ -1,0 +1,19 @@
+.btnMenu {
+    margin-right: 3rem;
+    background:none;
+    width: 40px;
+    height: 40px;
+    border:none;
+    display: none;
+}
+
+.btnMenu img{
+    width: 100%;
+}
+
+@media screen and (max-width:500px){
+    .btnMenu {
+        display: block;
+        z-index: 2000;
+    }
+}

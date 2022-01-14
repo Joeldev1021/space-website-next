@@ -20,5 +20,13 @@
     height: 27rem;
     margin: 9rem 0px;
   }
+}
 
+@media screen and (max-width: 500px) {
+  .explore {
+    width: 20rem;
+    height: 20rem;
+    margin: 9rem 0px;
+  }
+  
 }

@@ -10,7 +10,6 @@
     margin-top: 24rem;
     justify-content: space-between;
     align-items: center;
-    color: #EEEEEF  ;
 }
 
 @media screen and (max-width: 950px) {
@@ -31,9 +30,17 @@
 }
 
 .titlelg {
+    color:white;
     font-size: 15rem;
     font-family:  'Bellefair', serif;
 }
+
+@media screen and (max-width: 950px) {
+    .titlelg {
+        font-size: 8rem;
+    }
+}
+
 .text {
     font-size: 1.6rem;
     width: 39rem;
@@ -47,6 +54,14 @@
         width: 44rem;
         font-size: 1.8rem;
         margin-bottom: 15rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text {
+        font-size: 1.6rem;
+        width: 90%;
+        margin-bottom: 0;
     }
 }
     

@@ -12,6 +12,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .destination {
+    background-image: url("../public/assets/destination/background-destination-mobile.jpg");
+  }
+}
+
 .container {
    display: grid;
    width: 90%;
@@ -29,9 +35,17 @@
    }  
  }
 
+ @media screen and (max-width: 500px) {
+   .container {
+     margin-top: 1rem;
+   }
+ 
+ }
+
 
 .planet {
    padding-left: 8rem;
+
 }
 
 
@@ -51,14 +65,26 @@
    }
    .planet {
      padding-left: 0;
+    text-align: center;
+    margin-top: 2rem;
    }
    .img {
        width: 30rem;
    }
-    
  }
  
-
+ @media screen and (max-width: 500px) {
+   .containerImg {
+      margin-top: 5rem;
+   }
+   .planet {
+     padding-left: 0;
+   }
+   .img {
+       width: 20rem;
+   }
+   
+ }
 
 
 .section {
@@ -111,6 +137,7 @@
   font-size: 10rem;
   text-transform: uppercase;
   padding: 1rem 0px;
+  color:white;
 }
 
 .description {
@@ -132,6 +159,19 @@
    
 }
 
+@media screen and (max-width: 950px) {
+   .description {
+      width: 90%;
+   }
+   
+}
+@media screen and (max-width: 500px) {
+   .description {
+      padding: 0;
+      padding-bottom: 4rem;
+   }
+  
+}
 .containerTravel  {
    width: 40rem;
    display: grid;
@@ -140,10 +180,32 @@
    padding: 3rem 0px;
 }
 
+@media screen and (max-width: 950px) {
+   .containerTravel {
+      width: 90%;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin:auto;
+   }
+   .name {
+      font-size: 8rem;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .containerTravel {
+      grid-template-columns: 1fr;
+      gap:1rem;
+     
+   }
+   
+}
+
 .distance, .travel {
    font-size: 3rem;
    font-family: "Bellefair", serif;
    text-transform: uppercase;
+   color:white;
 }
 
 .label {

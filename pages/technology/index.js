@@ -39,7 +39,6 @@ const Tech = () => {
                           <p className={styles.description}>{tech[techId].description}</p>
                       </div>
                   </div>
-
               </section>
           </div>
       </div>
