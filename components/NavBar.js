@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import styles from "../styles/navbar.module.css";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
