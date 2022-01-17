@@ -9,10 +9,30 @@
   font-family: "Bellefair", serif;
   color: black;
   margin-right: 5rem;
+  cursor: pointer;
 }
 .explore p {
   font-size: 2.5rem;
 }
+
+.explore:before {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border:0px solid rgba(97,186,255,1);
+  border-radius: 50%;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.explore:hover:before {
+  border: 60px solid white;
+  animation: explore 0.3s ease-in-out;
+  opacity: 0.1;
+}
+
+
 
 @media screen and (max-width: 950px) {
   .explore {
@@ -29,4 +49,25 @@
     margin: 9rem 0px;
   }
   
+}
+
+@keyframes explore {
+  0% {
+    border:20px solid rgba(97,186,255,1);
+    opacity: 0.9;
+  }
+
+  50% {
+    border:40px solid rgba(97,186,255,1);
+    opacity: 0.6;
+  }
+  75% {
+    border:50px solid rgba(97,186,255,1);
+    opacity: 0.3;
+  }
+  100% {
+    border:60px solid white;
+    opacity: 0.1;
+  }
+
 }

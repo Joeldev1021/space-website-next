@@ -1,8 +1,14 @@
 import styles from "../styles/explore.module.css";
+import { useRouter } from "next/router";
 
 const Explore = () => {
+  const route = useRouter();
+  const handleExplore = () => {
+    route.push("destination");
+  };
+
   return (
-      <div className={styles.explore}>
+      <div onClick={() => handleExplore()} className={styles.explore}>
           <p>EXPLORE</p>
       </div>
   );
