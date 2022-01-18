@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
-import styles from "../../styles/crew.module.css";
+import styles from "/styles/crew.module.css";
 import data from "../../data.json";
 import Title from "../../components/Title";
 import CarouselItem from "../../components/CarouselItem";

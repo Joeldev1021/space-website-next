@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import data from "../../data.json";
 import { useEffect, useRef, useState } from "react";
 import Title from "../../components/Title";
-import styles from "../../styles/tech.module.css";
+import styles from "/styles/tech.module.css";
 import useScreenSize from "../../hooks/useScreenSize";
 
 const Tech = () => {
