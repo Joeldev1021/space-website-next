@@ -18,7 +18,7 @@ const Tech = () => {
     } else {
       setSrc(tech[techId].images.portrait);
     }
-  }, [width, techId]);
+  }, [width]);
 
   return (
       <div className={styles.tech}>

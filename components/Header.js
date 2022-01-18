@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import styles from "../styles/header.module.css";
+import Image from "next/image";
 
 const Header = () => {
   return (

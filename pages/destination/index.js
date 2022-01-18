@@ -4,6 +4,7 @@ import styles from "../../styles/destination.module.css";
 import data from "../../data.json";
 import { useState } from "react";
 import Title from "../../components/Title";
+import Image from 'next/image'
 
 const Destination = () => {
   const [destin, setDestin] = useState(data.destinations);
