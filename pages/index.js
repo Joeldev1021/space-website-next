@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Main from "../components/Main";
-import styles from "/styles/home.module.css";
+import styles from "../styles/home.module.css";
 import Head from "next/head";
 import Meta from "../components/Meta";
 
