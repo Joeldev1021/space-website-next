@@ -9,22 +9,15 @@ import useScreenSize from "../../hooks/useScreenSize";
 const Tech = () => {
   const [tech, setTech] = useState(data.technology);
   const [techId, setTechId] = useState(0);
-  const { width } = useScreenSize();
-  const [src, setSrc] = useState(tech[techId].images.portrait);
+  const [src, setSrc] = useState(tech[techId].images.portrai);
 
-  useEffect(() => {
-    if (width < 950) {
-      setSrc(tech[techId].images.landscape);
-    } else {
-      setSrc(tech[techId].images.portrait);
-    }
-  }, [width]);
+ 
 
   return (
       <div className={styles.tech}>
           <Header/>
           <div className={styles.containerImg}>
-              <img src={src} alt={tech[techId].name} />
+              <img src={tech[techId].images.landscape} alt={tech[techId].name} />
           </div>
           <div className={styles.container}>
               <section >
