@@ -1,13 +1,13 @@
-/* eslint-disable no-unused-vars */
-import Header from "../../components/Header";
+
 import styles from "/styles/destination.module.css";
-import data from "../../data.json";
 import { useState } from "react";
 import Title from "../../components/Title";
 import Image from 'next/image'
+import Layout from "../../components/Layout";
+import api from "../../api";
 
-const Destination = () => {
-  const [destin, setDestin] = useState(data.destinations);
+const Destination = ({dest}) => {
+  const [destin, setDestin] = useState(dest);
   const [destinId, setDestinId] = useState(0);
 
   const handleDestin = (id) => {
@@ -15,8 +15,7 @@ const Destination = () => {
   };
 
   return (
-      <div className={styles.destination}>
-          <Header />
+      <Layout page="destination">
           <div className={styles.container}>
               <div className={styles.planet}>
                   <Title num={"01"} text={"Pick your destination"}/>
@@ -42,8 +41,17 @@ const Destination = () => {
                   </div>
               </section>
           </div>
-      </div>
+      </Layout>
   );
 };
 
 export default Destination;
+
+export const getStaticProps = async () => {
+    const res = await api.getDestination();
+    return {
+        props: {
+        dest: res,
+        }
+    }
+}

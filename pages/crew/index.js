@@ -3,12 +3,13 @@
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import styles from "../../styles/crew.module.css";
-import data from "../../data.json";
 import Title from "../../components/Title";
 import CarouselItem from "../../components/CarouselItem";
+import Layout from "../../components/Layout";
+import api from "../../api";
 
-const Crew = () => {
-  const [crew, setCrew] = useState(data.crew);
+const Crew = ({crewData}) => {
+  const [crew, setCrew] = useState(crewData);
   const [crewId, setCrewId] = useState(0);
 
   const handleNavCrew = (id) => {
@@ -16,31 +17,24 @@ const Crew = () => {
   };
 
   return (
-      <div className={styles.crew}>
-          <Header/>
+      <Layout page="crew">
           <div className={styles.carousel}>
               {crew.map((item, i) => <CarouselItem item={item} index={i} crewId={crewId} key={i}/>)}
           </div>
-          <ul>
+          <ul className={styles.ul}>
               { new Array(4).fill(0).map((n, i) => <li className={i === crewId ? styles.active : ""} onClick={() => handleNavCrew(i)} key={i}></li>) }
           </ul>
-      </div>
+      </Layout>
   );
 };
 
 export default Crew;
 
-{ /* <div className="container">
-<section>
-    <Title num={"02"} text={"Meet Your Crew"}/>
-    <p className={styles.role}>{crew[crewId].role}</p>
-    <p className={styles.name}>{crew[crewId].name}</p>
-    <p className={styles.description}>{crew[crewId].bio}</p>
-    <ul>
-        { new Array(crew.length).fill(0).map((n, i) => <li className={i === crewId ? styles.active : ""} onClick={() => handleNavCrew(i)} key={i}></li>) }
-    </ul>
-</section>
-<div className={styles.containerImg}>
-    <img src={crew[crewId].images.webp} alt={crew[crewId].name} />
-</div>
-</div> */ }
+export async function getStaticProps() {
+    const res = await api.getCrew();
+  return {
+    props: {
+      crewData: res,
+    },
+  };
+}
