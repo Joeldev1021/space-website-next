@@ -1,9 +1,6 @@
-/* eslint-disable no-lone-blocks */
-/* eslint-disable no-unused-vars */
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Header from "../../components/Header";
 import styles from "../../styles/crew.module.css";
-import Title from "../../components/Title";
 import CarouselItem from "../../components/CarouselItem";
 import Layout from "../../components/Layout";
 import api from "../../api";
