@@ -1,29 +1,4 @@
-.crew {
-  background-image: url("../public/assets/crew/background-crew-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-}
 
-@media screen and (max-width: 950px) {
-  .crew {
-    background-image: url("../public/assets/crew/background-crew-tablet.jpg");
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .crew {
-    background-image: url("../public/assets/crew/background-crew-mobile.jpg");
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .crew {
-    background-image: url("../public/assets/crew/background-crew-mobile.jpg");
-  }
-    
-}
 
 .crew section {
   text-align: start;
@@ -77,7 +52,7 @@
   }
 }
 
-.crew ul {
+.ul {
   display: flex;
   justify-content: space-between;
   width: 15rem;
@@ -87,7 +62,7 @@
   left: 14rem;
 }
 
-.crew ul li {
+.ul li {
   list-style: none;
   width: 1.5rem;
   height: 1.5rem;
@@ -98,13 +73,13 @@
   cursor: pointer;
 }
 
-.crew .active {
+.ul .active {
   background: white;
   opacity: 1;
 }
 
 @media screen and (max-width: 950px) {
-  .crew ul {
+  .ul {
     width: 25rem;
     padding: 0;
     justify-content: space-around;
@@ -114,13 +89,13 @@
 }
 
 @media screen and (max-width: 750px) {
-  .crew ul {
+  .ul {
     bottom: 15rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .crew ul {
+  .ul {
     bottom: 22.5rem;
   }
   .role {

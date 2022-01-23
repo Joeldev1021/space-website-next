@@ -1,23 +1,4 @@
-.tech {
-    background-image: url("../public/assets/technology/background-technology-desktop.jpg");
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-     min-height: 100vh;
-  }
-/* responsive table */
-@media screen and (max-width: 950px) {
-    .tech {
-      background-image: url("../public/assets/technology/background-technology-tablet.jpg");
-    }
-}
 
-@media screen and (max-width: 500px) {
-    .tech {
-      background-image: url("../public/assets/technology/background-technology-mobile.jpg");
-    }
-  
-}
 
   .container {
     display: grid;
@@ -25,6 +6,7 @@
     margin:auto;
     margin-top: 6rem;
     grid-template-columns: 50% 50%;
+    padding-left: 10rem;
   }
   
   @media screen and (max-width: 950px) {
@@ -60,7 +42,7 @@
 
  
  
-  .tech  ul {
+  .ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -70,7 +52,7 @@
     padding: 0px;
   }
 
-  .tech ul li {
+  .ul li {
       border: 1px solid #dbdee2;
       width: 8rem;
       height: 8rem;
@@ -92,7 +74,7 @@
     .flex {
       flex-direction: column;
   }
-      .tech ul {
+      .ul {
           flex-direction: row;
           height: auto;
           margin: auto;
@@ -103,7 +85,7 @@
     .flex {
       flex-direction: column;
   }
-      .tech ul li{
+      .ul li{
           flex-direction: row;
           height: 60px;
           width: 60px;

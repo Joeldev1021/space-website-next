@@ -1,22 +1,4 @@
-.destination {
-  background-image: url("../public/assets/destination/background-destination-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-}
 
-@media screen and (max-width: 950px) {
-  .destination {
-    background-image: url("../public/assets/destination/background-destination-tablet.jpg");
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .destination {
-    background-image: url("../public/assets/destination/background-destination-mobile.jpg");
-  }
-}
 
 .container {
    display: grid;
