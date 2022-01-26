@@ -11,7 +11,7 @@ const CarouselItem = ({ item, crewId, index }) => {
 
   return (
       <div ref={ref} className={`${styles.carouselItem} ${crewId === index ? styles.carouselItemActive : ""}`}>
-          <section>
+          <section className={styles.section}>
               <Title num={"02"} text={"Meet Your Crew"}/>
               <p className={styles.role}>{item.role}</p>
               <p className={styles.name}>{item.name}</p>

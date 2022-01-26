@@ -1,15 +1,14 @@
-/* eslint-disable no-unused-vars */
 import Header from "../../components/Header";
-import data from "../../data.json";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Title from "../../components/Title";
 import styles from "../../styles/tech.module.css";
 import useScreenSize from "../../hooks/useScreenSize";
 import Layout from "../../components/Layout";
+import api from "../../api";
 
-const Tech = () => {
+const Tech = ({techData}) => {
    const {width} = useScreenSize();
-  const [tech, setTech] = useState(data.technology);
+  const [tech, setTech] = useState(techData);
   const [techId, setTechId] = useState(0);
   const [src, setSrc] = useState(tech[techId].images.landscape);
 
@@ -32,7 +31,6 @@ const Tech = () => {
             }
         }
   }, [techId]);
-  
   
 
   return (
@@ -60,3 +58,12 @@ const Tech = () => {
 };
 
 export default Tech;
+ 
+export const getStaticProps = async () => {
+    const res = await api.getTech();
+    return {
+        props: {
+        techData: res,
+        }
+    }
+}

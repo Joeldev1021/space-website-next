@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import BtnMenu from "./BtnMenu";
 
-const navList = ["home", "destination", "crew", "technology"];
+const navList = [" home", " destination", " crew", " technology"];
 
 const NavBar = () => {
   const [active, setActive] = useState(navList[0]);
@@ -24,11 +24,11 @@ const NavBar = () => {
       <>
           <BtnMenu handleShowMenu={handleShowMenu} activeMenu={activeMenu}/>
           <nav ref={refNav} className={styles.nav}>
-              {
+        {
            navList.map((item, index) => {
              return (
-                 <li className={active === item ? "nav-active" : ""} key={item}>
-                     <Link href={item === "home" ? "/" : item}>
+                 <li className={active === item.trim() ? "nav-active" : ""} key={item}>
+                     <Link href={item.trim() === "home" ? "/" : item}>
                          <a><span>0{index}</span>{item}</a>
                      </Link>
                  </li>
@@ -41,3 +41,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+/*     
+*/

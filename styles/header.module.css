@@ -24,7 +24,8 @@
 .header > span {
     border-bottom: 1px solid #777777; 
     position: absolute;    
-    width:50rem;
-    left: 15rem;
+    /* width:50rem; */
+    width: 32%;
+    left: 18rem;
     z-index: 2;
 }

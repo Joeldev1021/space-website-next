@@ -34,11 +34,11 @@
 
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 768px) {
   .explore {
     width: 27rem;
     height: 27rem;
-    margin: 9rem 0px;
+    margin: 5rem 0px;
   }
 }
 

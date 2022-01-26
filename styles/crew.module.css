@@ -1,8 +1,9 @@
 
 
-.crew section {
+.section {
   text-align: start;
   padding-left: 8rem;
+  
 }
 
 .role {
@@ -16,6 +17,7 @@
 
 @media screen and (max-width: 950px) {
   .crew section {
+  
     padding: 0;
     text-align: center;
   }
@@ -206,6 +208,7 @@
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
+
 }
 
 @media screen and (max-width: 950px) {

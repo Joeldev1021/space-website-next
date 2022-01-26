@@ -13,6 +13,7 @@ const Crew = ({crewData}) => {
     setCrewId(id);
   };
 
+  
   return (
       <Layout page="crew">
           <div className={styles.carousel}>
