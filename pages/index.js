@@ -6,9 +6,8 @@ import Header from "../components/Header";
 
 export default function Home () {
   return (
-          <div className={styles.home}>
-            <Header/>
+          <Layout page={"home"}>
             <Main />
-          </div>       
+          </Layout>       
   );
 }
