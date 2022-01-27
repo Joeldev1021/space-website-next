@@ -3,6 +3,7 @@ import { useState } from "react";
 import Title from "../../components/Title";
 import Layout from "../../components/Layout";
 import api from "../../api";
+import Header from "../../components/Header";
 
 const Destination = ({dest}) => {
   const [destin, setDestin] = useState(dest);
@@ -13,7 +14,8 @@ const Destination = ({dest}) => {
   };
 
   return (
-      <Layout page="destination">
+      <div className={styles.destination}>
+          <Header/>
           <div className={styles.container}>
               <div className={styles.planet}>
                   <Title num={"01"} text={"Pick your destination"}/>
@@ -39,7 +41,7 @@ const Destination = ({dest}) => {
                   </div>
               </section>
           </div>
-      </Layout>
+      </div>
   );
 };
 

@@ -4,34 +4,14 @@ import styles from "../../styles/tech.module.css";
 import useScreenSize from "../../hooks/useScreenSize";
 import Layout from "../../components/Layout";
 import api from "../../api";
+import Header from "../../components/Header";
 
 const Tech = ({techData}) => {
    const {width} = useScreenSize();
    const [tech, setTech] = useState(techData);
    const [techId, setTechId] = useState(0);
   const [srcImg, setSrcImg] = useState(tech[techId].images.portrait);
-  /* const [src, setSrc] = useState(tech[techId].images.portrait); */
-
-/*   useEffect(() => {
-      if(window){
-          if(width < 800){
-              setSrc(tech[techId].images.landscape);
-          } else if(width > 800) {
-              setSrc(tech[techId].images.portrait);
-          }
-      }
-  }, [width]);
-
-  useEffect(() => {
-        if(window){
-            if(width < 800){
-                setSrc(tech[techId].images.landscape);
-            } else if(width > 800) {
-                setSrc(tech[techId].images.portrait);
-            }
-        }
-  }, [techId]);
-  */ 
+ 
  useEffect(() => {
      console.log("hola")
         width < 768 ? setSrcImg(tech[techId].images.landscape) : setSrcImg(tech[techId].images.portrait);
@@ -39,7 +19,8 @@ const Tech = ({techData}) => {
  
 
   return (
-      <Layout page="tech">
+      <div className={styles.tech}>
+          <Header/>
           <div className={styles.containerImg}>
               <img src={srcImg}  alt={tech[techId].name} />
           </div>
@@ -58,7 +39,7 @@ const Tech = ({techData}) => {
                   </div>
               </section>
           </div>
-      </Layout>
+      </div>
   );
 };
 

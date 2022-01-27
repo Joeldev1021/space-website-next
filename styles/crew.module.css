@@ -1,4 +1,28 @@
+.crew {
+  background-image: url("../public/assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-height: 100vh;
+}
 
+@media screen and (max-width: 950px) {
+  .crew {
+    background-image: url("../public/assets/crew/background-crew-tablet.jpg");
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .crew {
+    background-image: url("../public/assets/crew/background-crew-mobile.jpg");
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .crew {
+    background-image: url("../public/assets/crew/background-crew-mobile.jpg");
+  } 
+}
 
 .section {
   text-align: start;
