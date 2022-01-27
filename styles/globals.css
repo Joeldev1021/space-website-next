@@ -30,7 +30,7 @@ p {
 }
 
 .home {
-  background-image: url("../public/assets/home/background-home-desktop.jpg");
+  background-image: url("/public/assets/home/background-home-desktop.jpg");
    background-repeat: no-repeat;
    background-position: top;
    background-size: cover;
@@ -39,20 +39,20 @@ p {
 
 @media screen and (max-width: 950px) {
   .home {
-    background-image: url("../public/assets/home/background-home-tablet.jpg");
+    background-image: url("/public/assets/home/background-home-tablet.jpg");
   }
 }
 
 @media screen and (max-width: 500px) {
   .home {
-    background-image: url("../public/assets/home/background-home-mobile.jpg");
+    background-image: url("/public/assets/home/background-home-mobile.jpg");
   }
 }
 
 
  /* destination */
 .destination {
-  background-image: url("../public/assets/destination/background-destination-desktop.jpg");
+  background-image: url("/public/assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -61,7 +61,7 @@ p {
 
 @media screen and (max-width: 950px) {
   .destination {
-    background-image: url("../public/assets/destination/background-destination-tablet.jpg");
+    background-image: url("/public/assets/destination/background-destination-tablet.jpg");
   }
 }
 
@@ -133,8 +133,6 @@ p {
   margin-top: 6rem;
   grid-template-columns: 50% 50%;
 }
-
-
 
 
 .nav-active {
