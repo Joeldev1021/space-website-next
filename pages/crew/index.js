@@ -3,7 +3,6 @@ import styles from "../../styles/crew.module.css";
 import CarouselItem from "../../components/CarouselItem";
 import Layout from "../../components/Layout";
 import api from "../../api";
-import Header from "../../components/Header";
 
 const Crew = ({crewData}) => {
   const [crew, setCrew] = useState(crewData);
@@ -14,15 +13,14 @@ const Crew = ({crewData}) => {
   };
 
   return (
-      <div className={styles.crew}>
-        <Header/>
+      <Layout page="crew">
           <div className={styles.carousel}>
               {crew.map((item, i) => <CarouselItem item={item} index={i} crewId={crewId} key={i}/>)}
           </div>
           <ul className={styles.ul}>
               { new Array(4).fill(0).map((n, i) => <li className={i === crewId ? styles.active : ""} onClick={() => handleNavCrew(i)} key={i}></li>) }
           </ul>
-      </div>
+      </Layout>
   );
 };
 

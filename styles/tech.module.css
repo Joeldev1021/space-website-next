@@ -1,26 +1,4 @@
 
-.tech {
-    background-image: url("../public/assets/technology/background-technology-desktop.jpg");
-     background-repeat: no-repeat;
-     background-position: top;
-     background-size: cover;
-     min-height: 100vh;
-  }
-/* responsive table */
-@media screen and (max-width: 950px) {
-    .tech {
-      background-image: url("../public/assets/technology/background-technology-tablet.jpg");
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .tech {
-      background-image: url("../public/assets/technology/background-technology-mobile.jpg");
-    }
-  
-}
-
-
 
 .container {
   display: grid;

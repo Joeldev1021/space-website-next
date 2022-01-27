@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 export default function Home () {
   return (
-          <Layout page={"home"}>
+          <Layout page="home">
             <Main />
           </Layout>       
   );

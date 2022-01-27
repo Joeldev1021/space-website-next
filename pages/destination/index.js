@@ -14,8 +14,7 @@ const Destination = ({dest}) => {
   };
 
   return (
-      <div className={styles.destination}>
-          <Header/>
+      <Layout page="destination"> 
           <div className={styles.container}>
               <div className={styles.planet}>
                   <Title num={"01"} text={"Pick your destination"}/>
@@ -41,7 +40,7 @@ const Destination = ({dest}) => {
                   </div>
               </section>
           </div>
-      </div>
+      </Layout>
   );
 };
 

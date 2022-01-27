@@ -4,7 +4,6 @@ import styles from "../../styles/tech.module.css";
 import useScreenSize from "../../hooks/useScreenSize";
 import Layout from "../../components/Layout";
 import api from "../../api";
-import Header from "../../components/Header";
 
 const Tech = ({techData}) => {
    const {width} = useScreenSize();
@@ -13,14 +12,12 @@ const Tech = ({techData}) => {
   const [srcImg, setSrcImg] = useState(tech[techId].images.portrait);
  
  useEffect(() => {
-     console.log("hola")
         width < 768 ? setSrcImg(tech[techId].images.landscape) : setSrcImg(tech[techId].images.portrait);
  }, [width]);
  
 
   return (
-      <div className={styles.tech}>
-          <Header/>
+      <Layout page="tech">
           <div className={styles.containerImg}>
               <img src={srcImg}  alt={tech[techId].name} />
           </div>
@@ -39,7 +36,7 @@ const Tech = ({techData}) => {
                   </div>
               </section>
           </div>
-      </div>
+      </Layout>
   );
 };
 
