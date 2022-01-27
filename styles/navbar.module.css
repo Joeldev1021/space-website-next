@@ -76,9 +76,10 @@ font-family: 'Bellefair', serif; */
       height: 100%;
       top: 0;
       right: 0;
-      z-index: 100;
+      z-index: 1000;
       transition: all  0.3s ease;
       transform: translateX(100%);
+
    }
     .nav li{
        height: 5rem;
@@ -126,6 +127,16 @@ font-family: 'Bellefair', serif; */
    }
 }
 
+@media screen and (max-width: 500px) {
+  
+   .nav li:hover {
+      text-underline-offset: 5px;
+   }
+   .nav {
+      padding-top: 5rem;
+   }
+}
+   
 
 
 

@@ -144,6 +144,13 @@ p {
  
 }
 
+@media screen and (max-width: 500px) {
+  .nav-active {
+    text-underline-offset: 10px;
+  }
+  
+}
+
 .title {
   margin:auto;
   font-family: 'Barlow Condensed', sans-serif;
@@ -152,6 +159,7 @@ p {
   text-align: left;
   font-size: 2.8rem;
   text-transform: uppercase;
+  color:white;
 }
 
 .title span {

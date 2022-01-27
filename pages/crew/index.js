@@ -1,5 +1,4 @@
 import {  useState } from "react";
-import Header from "../../components/Header";
 import styles from "../../styles/crew.module.css";
 import CarouselItem from "../../components/CarouselItem";
 import Layout from "../../components/Layout";
@@ -13,7 +12,6 @@ const Crew = ({crewData}) => {
     setCrewId(id);
   };
 
-  
   return (
       <Layout page="crew">
           <div className={styles.carousel}>

@@ -1,7 +1,6 @@
 import styles from "/styles/destination.module.css";
 import { useState } from "react";
 import Title from "../../components/Title";
-import Image from 'next/image'
 import Layout from "../../components/Layout";
 import api from "../../api";
 

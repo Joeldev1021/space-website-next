@@ -1,4 +1,3 @@
-import Header from "../../components/Header";
 import { useEffect, useState } from "react";
 import Title from "../../components/Title";
 import styles from "../../styles/tech.module.css";

@@ -19,7 +19,7 @@
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-.titlelg {
+.title-space {
     color:white;
     font-size: 15rem;
     font-family:  'Bellefair', serif;
@@ -55,6 +55,9 @@
         font-size: 1.6rem;
         width: 90%;
         margin-bottom: 0;
+    }
+    .title-space {
+        font-size: 8rem;
     }
 }
     

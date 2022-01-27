@@ -7,7 +7,7 @@ const Main = () => {
           <div className={styles.container}>
               <div className={styles.details}>
                   <p className={styles.title}>So, you want to travel to</p>
-                  <p className={styles.titlelg}>SPACE</p>
+                  <p className={styles["title-space"]}>SPACE</p>
                   <p className={styles.text}>
                       Let’s face it; if you want to go to space, you might as well
                       genuinely go to outer space and not hover kind of on the edge of it.

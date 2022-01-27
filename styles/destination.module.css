@@ -149,3 +149,15 @@
     font-size: 8rem;
   }
 }
+@media screen and (max-width:500px) {
+   .description {
+     width: 100%;
+   }
+   .container {
+    width: 90%;
+   }
+   .ul {
+    width: 90%;
+   }
+}
+
