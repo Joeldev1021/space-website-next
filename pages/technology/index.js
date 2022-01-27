@@ -9,7 +9,7 @@ const Tech = ({techData}) => {
    const {width} = useScreenSize();
   const [tech, setTech] = useState(techData);
   const [techId, setTechId] = useState(0);
-  const [src, setSrc] = useState(tech[techId].images.landscape);
+  const [src, setSrc] = useState(tech[techId].images.portrait);
 
   useEffect(() => {
       if(window){
