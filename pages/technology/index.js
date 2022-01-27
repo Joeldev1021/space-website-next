@@ -7,11 +7,12 @@ import api from "../../api";
 
 const Tech = ({techData}) => {
    const {width} = useScreenSize();
-  const [tech, setTech] = useState(techData);
-  const [techId, setTechId] = useState(0);
-  const [src, setSrc] = useState(tech[techId].images.portrait);
+   const [tech, setTech] = useState(techData);
+   const [techId, setTechId] = useState(0);
+  const [srcImg, setSrcImg] = useState(tech[techId].images.portrait);
+  /* const [src, setSrc] = useState(tech[techId].images.portrait); */
 
-  useEffect(() => {
+/*   useEffect(() => {
       if(window){
           if(width < 800){
               setSrc(tech[techId].images.landscape);
@@ -30,12 +31,17 @@ const Tech = ({techData}) => {
             }
         }
   }, [techId]);
-  
+  */ 
+ useEffect(() => {
+     console.log("hola")
+        width < 768 ? setSrcImg(tech[techId].images.landscape) : setSrcImg(tech[techId].images.portrait);
+ }, [width]);
+ 
 
   return (
       <Layout page="tech">
           <div className={styles.containerImg}>
-              <img src={src} alt={tech[techId].name} />
+              <img src={srcImg}  alt={tech[techId].name} />
           </div>
           <div className={styles.container}>
               <section >
